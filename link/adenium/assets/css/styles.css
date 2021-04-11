@@ -108,7 +108,7 @@ section {
     margin-bottom: 10px;
     border: 10px inset rgb(128, 128, 128);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 685px) {
     .title {
         font-size: 50px;
     }
