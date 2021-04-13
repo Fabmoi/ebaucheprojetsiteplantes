@@ -130,7 +130,7 @@ html {
     92% {-webkit-transform: rotate(320deg);}
   }
   .bio { 
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', !important;
     color: rgb(0, 0, 0);
     text-align: center;
   }
@@ -185,7 +185,7 @@ html {
     } 
   }
   .navbutton {
-    font-family: 'Pangolin';
+    font-family: 'Pangolin', !important;
     font-size: 30px;
     border-radius: 25%;
   }
