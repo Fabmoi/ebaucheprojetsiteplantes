@@ -1,6 +1,6 @@
 html {
     font-size: 20px;
-    font-family: 'Akaya Telivigala', serif;
+    font-family: 'Akaya Telivigala', serif, !important;
   }
   body {
     margin: auto;
