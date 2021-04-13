@@ -8,3 +8,6 @@ myImage.addEventListener('click', function() {
       myImage.setAttribute('src', 'assets/img/profil/joye.jpg');
     }
 });                                                                                            /* changer d'image au clic */
+
+
+                                                                          

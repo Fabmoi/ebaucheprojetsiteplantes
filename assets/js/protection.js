@@ -8,7 +8,7 @@ function prot()
                for(var i=0; i<imgs.length; i++)
                imgs[i].oncontextmenu = rien;
                }                                                                                  /* Bloque le clic-droit sur les images */ 
-
+               
 
 function ffalse()
                 {
@@ -24,3 +24,6 @@ function ffalse()
                 document.onmousedown = ffalse;
                 document.onclick = ftrue;
                 }                                                                                 /* Empêche la sélection sur la page */
+
+
+            
