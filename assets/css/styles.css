@@ -205,6 +205,21 @@ html {
   .styledbutton:active {
       border: 2px solid rgb(0, 0, 0);
   }
+  .topbutton {
+    font-size: 30px;
+    font-family: 'Pangolin';
+    font-weight: bold;
+    line-height: 1.8;
+    width: auto;
+    margin: auto;    
+    margin-bottom: 10px; 
+    }
+  .topbutton:hover {
+    background-color: rgb(6, 250, 6);
+   }
+   .topbutton:active {
+   background-color: rgb(0, 0, 255);
+   }
 
   @media screen and (max-width: 1450px){
     aside {
