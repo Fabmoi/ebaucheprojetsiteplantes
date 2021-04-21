@@ -16,62 +16,20 @@ border: double rgba(0,0,0);
 text-align: center;
 height: 5px;
 }
-nav {
+nav, .styledtopbutton, .gallerybutton {
 text-align: center;
 }
 .title {
 font-size: 60px;
 font-weight: bold;
-color: rgba(0,0,0);
-text-shadow: 3px 3px 3px rgb(255,255,255);
+color: rgba(255,255,255);
+text-shadow: 3px 3px 3px rgb(0,0,0);
 }
 .subtitle {
 font-size: 45px;
 font-weight: bold;
-color: rgba(0,0,0);
-text-shadow: 3px 3px 3px rgb(255,255,255);
-}
-caption {
-font-size: 50px; 
-color: rgb(154, 205, 50);
-background: chocolate;
-border-radius: 50%;
-text-shadow: 3px 3px 3px rgba(0,0,0);
-width: 400px;
-margin: auto;
-}
-table {
-width: 75%;
-margin: auto;
-border-collapse: collapse;  
-text-align: center;
-border: 10px double rgba(0,0,0);
-background:  rgb(127,255,212);
-}
-th {
-border: 2px solid rgba(0,0,0);
-font-size: 25px;
-} 
-td {
-border: 1px solid rgba(0,0,0);
-font-size: 25px;
-} 
-td:nth-child(2){
-font-size: 20px;
-}
-td:nth-child(3){
-font-size: 20px;
-}
-td:nth-child(4){
-font-size: 20px;  
-}
-td:nth-child(5){
-font-size: 20px;
-}
-tbody {
-border-left: 2px solid rgba(0,0,0);
-border-right: 2px solid rgba(0,0,0);
-border-bottom: 2px solid rgba(0,0,0);
+color: rgba(255,255,255);
+text-shadow: 3px 3px 3px rgb(0,0,0);
 }
 button {
 font-size: 30px;
@@ -92,51 +50,70 @@ background-color: rgb(253, 18, 3);
 background-color: rgb(0, 0, 255);
 }
 .topbutton:hover {
- background-color: rgb(6, 250, 6);
+background-color: rgb(6, 250, 6);
 }
 .topbutton:active {
 background-color: rgb(0, 0, 255);
 }
 section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 .flex {
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 10px inset rgb(128, 128, 128);
+margin: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+border: 10px inset rgb(128, 128, 128);
 }
-@media screen and (max-width: 685px) {
-    .title {
-        font-size: 50px;
+.flex2 {
+border:1px solid rgb(0, 0, 0)
+}
+.species {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+body {
+    background: url("../img/background/tronc.jpg") fixed;
     }
-    .subtitle {
-        font-size: 25px;
+:root {
+    --accent: rgb(0, 0, 255);
+}
+hr {
+    border: double rgba(0,0,0);
+    text-align: center;
+    height: 5px;
     }
-    thead, tbody, th, td, tr { 
-        display: block;
-    }
-    thead {
-        position: absolute;
-        top: -9999px;
-        right: -9999px;
-    }
-    td:nth-of-type(2):before {
-        content: "Exposition: ";
-        font-weight: bold;
-    }
-    td:nth-of-type(3):before {
-        content: "Arrosage: ";
-        font-weight: bold;
-    }
-    td:nth-of-type(4):before {
-        content: "Rempotage: ";
-        font-weight: bold;
-    }
-    td:nth-of-type(5):before {
-        content: "Saisons: ";
-        font-weight: bold;
-    } 
-} 
+.nav-pills {
+    display: flex;
+    justify-content: center;
+}
+.nav-pills a {
+    border-top: 1px solid rgb(0,0,0);
+    border-right: solid 1px rgb(0,0,0);
+    border-left: 1px solid rgb(0,0,0);
+    background-color: rgb(0, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.nav-pills a[aria-selected="true"] {
+    background:rgb(127,255,212);
+    color:rgb(0,0,0);
+    box-shadow: 0px 5px 0px rgb(127,255,212);
+}
+.nav-pills a:hover,
+.nav-pills a:focus {
+    background: var(--accent) linear-gradient(to top,rgba(255,255,255,.5), rgba(255,255,255,.5));
+    color: rgb(255, 255, 255);
+}
+.tab-content {
+    border: 2px solid rgb(0,0,0);
+    background: rgb(127,255,212);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    min-height: 243px;
+}

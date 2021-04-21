@@ -12,40 +12,42 @@
     </head>
     <body onload="prot()">
         <header> 
-            <div class="title"><u id="top">MES PALMIERS</u></div>
+          <div class="title"><u id="top">MES PALMIERS</u></div>
                 <span class="subtitle">Végétaux présents ici: Beaucarnea recurvata.</span>
-          </header>
+        </header>
         <hr><hr>
-          <table>     
-            <thead>
-                <tr>
-                    <th>Nom et photo</th>
-                    <th>Exposition</th>
-                    <th>Arrosage</th>
-                    <th>Rempotage</th>
-                    <th>Saisons</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Beaucarnea recurvata</strong><br/>
-                        <img src="assets/img/images/beaucarnea.jpg" alt="Beaucarnea recurvata"/></td>
-                    <td>Lumineuse avec soleil direct, soleil d'été après acclimatation.</td>
-                    <td>Pas besoin de beaucoup d'eau, laisser sécher entre 2 arrosages. Arrosage faible en hiver.</td>
-                    <td>Terreau normal plantes d'intérieur mélangé avec du sable. Bac en plastique de taille moyenne.</td>
-                    <td>Été en intérieur ou extérieur et en hiver dans une pièce pas trop fraîche.</td>
-                </tr>
-            </tbody>
-            </table>
-            <section> 
-                      <img class="flex" src="assets/img/grandesimages/beaucarnearecurvata1.jpg"/>
-                      <img class="flex" src="assets/img/grandesimages/beaucarnearecurvata2.jpg"/>
-                      <img class="flex" src="assets/img/grandesimages/beaucarnearecurvata3.jpg"/>
-            </section>
-        <nav>
-            <button class="topbutton"><a href="#top">Haut de la page.</a></button>
-            <button class="styledbutton"><a href="../../index.html">Retourner sur la page d'accueil</a></button>
-        </nav>
+
+		<nav-tabs class="nav-pills">
+            <a href="#recurvata1" aria-selected="true">Nom</a>
+            <a href="#recurvata2">Exposition en été</a>
+            <a href="#recurvata3">Exposition en hiver</a>
+            <a href="#recurvata4">Arrosage en été</a>
+            <a href="#recurvata5">Arrosage en hiver</a>
+            <a href="#recurvata6">Rempotage</a>
+        </nav-tabs>   
+        <div class="tab-content" id="recurvata1"><span class="species">Beaucarnea recurvata</span>
+				<img src="assets/img/images/beaucarnea.jpg" alt="Beaucarnea recurvata" title="Beaucarnea recurvata"/>
+        </div>   
+        <div class="tab-content" id="recurvata2" hidden="hidden">Je le mets dehors à partir de la deuxième quinzaine de Mai jusque courant Octobre dans une situation très lumineuse avec du soleil direct toute la journée. <br/>Seulement après avoir été acclimaté au soleil.
+        </div>
+        <div class="tab-content" id="recurvata3" hidden="hidden">Je le place en intérieur dans une pièce non chauffée pas très loin d'une fenêtre recevant du soleil.
+        </div>
+        <div class="tab-content" id="recurvata4" hidden="hidden">Je ne l'arrose que lors de longues périodes de soleil sans pluie. <br/>En général par bassinage car, la chaleur et le soleil feront sécher la motte assez rapidement sans risque que la moisissure ne s'installe.
+        </div>
+        <div class="tab-content" id="recurvata5" hidden="hidden">Je stoppe tous les arrosages durant plusieurs mois une fois rentré jusqu'au retour du beau temps. <br/> Je donne un peu d'eau seulement si je vois que le substrat craquèle de sécheresse.
+        </div>
+        <div class="tab-content" id="recurvata6" hidden="hidden">Je mélange un fin terreau pour plantes d'intérieur en retirant tous les gros morceaux et je le mélange avec une bonne quantité de gravillons de quartz et de sable de rivière. <br/>Je le garde dans un pot en plastique de taille moyenne.
+        </div>
+        <hr>
+
+       <nav class="gallerybutton">
+<button class="styledbutton"><a href="gallery.html">Galerie photos de mes Palmiers</a></button>
+</nav>
+<nav>
+<button class="topbutton"><a href="#top">Haut de la page</a></button>
+<button class="styledbutton"><a href="../../index.html">Retourner sur la page d'accueil</a></button>
+</nav>
+<script src="assets/js/onglets.js"></script>
 
     </body>
 </html>

@@ -1,80 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width"/>
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Akaya+Telivigala" rel='stylesheet' type='text/css'/>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel='stylesheet' type='text/css'/>
     <link href="http://fonts.googleapis.com/css?family=Pangolin" rel='stylesheet' type='text/css'/>
+    <title>Mes Alocasia</title>
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="assets/js/protection.js"></script>
-        <title>Mes Alocasia</title>
-    </head>
-    <body onload="prot()">
-        <header> 
-            <div class="title"><u id="top"> MES ALOCASIA</u></div>
+    <script src="assets/js/onglets.js" type="module" Defer></script>
+</head>
+<body onload="prot()">
+    <header> 
+        <div class="title"><u id="top"> MES ALOCASIA</u></div>
                 <span class="subtitle">Végétaux présents ici: Alocasia amazonica polly, Alocasia wentii.</span>
-          </header>
-<main>         
-        <hr><hr>
-          <table>    
-            <thead>
-                <tr>
-                    <th>Nom et photo</th>
-                    <th>Exposition</th>
-                    <th>Arrosage</th>
-                    <th>Rempotage</th>
-                    <th>Saisons</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Alocasia amazonica 'polly'</strong><br/>
-                        <img src="assets/img/images/alocasiaamazonica.jpg" alt="Alocasia amazonica polly"/></td>
-                    <td>Lumineuse sans soleil direct. Soleil d'hiver sans danger.</td>
-                    <td>Modéré et régulier en laissant le substrat sécher un peu entre 2 arrosages. À besoin d'une bonne humidité ambiante.Adapter en hiver.</td>
-                    <td>Terreau normal plantes d'intérieur éventuellement mélangé avec de la tourbe ou fibre de coco. Pot en plastique de taille moyenne.</td>
-                    <td>Été: Intérieur et extérieur. Hiver: Intérieur ambiante ou dans une pièce fraîche.</td>
-                </tr>
-            </tbody>
-            </table>
-            <section>
-                     <img class="flex" src="assets/img/grandesimages/alocasiaamazonicapolly(1).jpg"/>
-                     <img class="flex" src="assets/img/grandesimages/alocasiaamazonicapolly(2).jpg"/>
-                     <img class="flex" src="assets/img/grandesimages/alocasiaamazonicapolly(3).jpg"/>
-                     <img class="flex" src="assets/img/grandesimages/alocasiaamazonicapolly(4).jpg"/>
-            </section>
-            <table>
-            <thead>
-                <tr>
-                    <th>Nom et photo</th>
-                    <th>Exposition</th>
-                    <th>Arrosage</th>
-                    <th>Rempotage</th>
-                    <th>Saisons</th>
-                </tr>
-            </thead>
-            <tbody>
-                    <td><strong>Alocasia wentii</strong><br/>
-                        <img src="assets/img/images/alocasiawentii.jpg" alt="Alocasia wentii"/></td>
-                    <td>Très lumineuse avec soleil direct. Été au soleil après acclimatation.</td>  
-                    <td>Modéré et régulier en laissant le substrat sécher entre 2 arrosages. À besoin d'une bonne humidité ambiante. Adapter en hiver.</td>
-                    <td>Terreau normal plantes d'intérieur éventuellement mélangé avec de la tourbe ou fibre de coco. Pot en plastique de bonne taille.</td>
-                    <td>Été: Intérieur et extérieur. Hiver: Intérieur ambiante ou dans une pièce fraîche.</td>
-                </tr>
-            </tbody>
-        </table>
+      </header>
+<hr><hr>
+        <nav-tabs class="nav-pills">
+            <a href="#ama1" aria-selected="true">Nom</a>
+            <a href="#ama2">Exposition en été</a>
+            <a href="#ama3">Exposition en hiver</a>
+            <a href="#ama4">Arrosage en été</a>
+            <a href="#ama5">Arrosage en hiver</a>
+            <a href="#ama6">Rempotage</a>
+        </nav-tabs>
+    
+        <div class="tab-content" id="ama1"><span class="species">Alocasia amazonica polly</span>
+            <img class="flex2" src="assets/img/images/alocasiaamazonica.jpg"  alt="Alocasia amazonica polly" title="Alocasia amazonica polly"/>
+            <img class="flex2" src="assets/img/images/alocasiaamazonica2.jpg" alt="Alocasia amazonica polly" title="Alocasia amazonica polly"/>
+            <img class="flex2" src="assets/img/images/alocasiaamazonica3.jpg" alt="Alocasia amazonica polly" title="Alocasia amazonica polly"/>
+            <img class="flex2" src="assets/img/images/alocasiaamazonica4.jpg" alt="Alocasia amazonica polly" title="Alocasia amazonica polly"/>
+        </div>
+        <div class="tab-content" id="ama2" hidden="hidden">Je la mets dans une situation lumineuse sans soleil direct. <br/>Je la sors en prenant soin de la laisser ou elle ne recevra pas de soleil direct.
+        </div>
+        <div class="tab-content" id="ama3" hidden="hidden"> Je ne la mets pas trop loin d'une fenêtre afin qu'elle reçoive assez de lumière en attendant qu'elle entre en période de repos. <br/>Endroit oscillant aux alentours de 18°C - 20°C.
+        </div>
+        <div class="tab-content" id="ama4" hidden="hidden">En été, je l'arrose de façon régulière et modérée afin que le substrat reste humide ou ne sèche qu'un peu. <br/>Lorsqu'il fait chaud durant une période plus longue qu,une semaine, ce sera généralement un bassinage et vu la chaleur ambiante la motte ne restera pas trop trempée assez longtemps pour l'installation de moisissure. <br/>Je fais également attention à ce qu'elle ne manque pas d'humidité ambiante car elle n'aime pas l'air sec.
+        </div>
+        <div class="tab-content" id="ama5" hidden="hidden">En hiver, je diminue les arrosages pour la période de repos de la plante.
+        </div>
+        <div class="tab-content" id="ama6" hidden="hidden">Je prépare un mélange de bon terreau pour plantes d'intérieur auquel je rajoute un peu de fibre de coco et du sable de rivière pour le drainage. <br/>Je le préfère dans un pot en plastique de bonne taille.
+        </div>
+        <hr>
+        <nav-tabs class="nav-pills">
+            <a href="#wen1" aria-selected="true">Nom</a>
+            <a href="#wen2">Exposition en été</a>
+            <a href="#wen3">Exposition en hiver</a>
+            <a href="#wen4">Arrosage en été</a>
+            <a href="#wen5">Arrosage en hiver</a>
+            <a href="#wen6">Rempotage</a>
+        </nav-tabs>
+    
+        <div class="tab-content" id="wen1"><span class="species">Alocasia wentii</span>
+            <img class="flex2" src="assets/img/images/alocasiawentii.jpg"  alt="Alocasia wentii" title="Alocasia wentii"/>
+            <img class="flex2" src="assets/img/images/alocasiawentii2.jpg" alt="Alocasia wentii" title="Alocasia wentii"/>
+            <img class="flex2" src="assets/img/images/alocasiawentii3.jpg" alt="Alocasia wentii" title="Alocasia wentii"/>
+        </div>
+        <div class="tab-content" id="wen2" hidden="hidden">Je l'installe dans une situation mi-ensolleillée ou il recevra du soleil matinal ou du soir mais pas celui de midi de manière directe. <br/>De préférence en extérieur vu la taille de ma plante.
+        </div>
+        <div class="tab-content" id="wen3" hidden="hidden">En hiver, je le laisse perdre son feuillage au froid pour une période de dormance. <br/>Je ne la protègerai que lors de grosses gelées avec un paillage et coffrage ou la rentrerai dans une pièce froide.
+        </div>
+        <div class="tab-content" id="wen4" hidden="hidden">Cette plante aime beaucoup l'humidité et donc, j'arrose régulièrement afin que le substrat reste toujours humide ou ne sèche qu'un peu seulement.
+        </div>
+        <div class="tab-content" id="wen5" hidden="hidden">En hiver vu que la plante est en période de dormance, je n'arrose pas et je laisse faire la pluie.
+        </div>
+        <div class="tab-content" id="wen6" hidden="hidden">Je prépare d'abord un mélange composé d'un bon terreau pour plantes d'intérieur auquel je rajoute un peu de fibre de coco et du sable de rivière. <br/>Je la préfère dans un bac en plastique de grande taille.
+        </div>
 
-        <section> <img class="flex" src="assets/img/grandesimages/wentii(1).jpg"/>
-                  <img class="flex" src="assets/img/grandesimages/wentii(2).jpg"/>
-                  <img class="flex" src="assets/img/grandesimages/wentii(3).jpg"/>
-                  <img class="flex" src="assets/img/grandesimages/wentii(4).jpg"/>
-        </section>
-</main> 
-        <nav>
-            <button class="topbutton"><a href="#top">Haut de la page.</a></button>
-            <button class="styledbutton"><a href="../../index.html">Retourner sur la page d'accueil</a></button>
-        </nav>
+        <nav class="gallerybutton">
+            <button class="styledbutton"><a href="gallery.html">Galerie photos de mes Alocasia</a></button>
+           </nav>
+       <nav class="styledtopbutton">
+           <button class="styledbutton"><a href="#top">Haut de la page</a></button>
+           <button class="topbutton"><a href="../../index.html">Retourner sur la page d'accueil</a></button>
+       </nav>
 
-    </body>
+    
+</body>
 </html>
