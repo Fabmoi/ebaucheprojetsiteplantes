@@ -45,6 +45,7 @@ html {
     position: fixed;
     right: 0;
     top: 300px;
+    display: none;
   }
   article {                               /*update*/ 
     text-align: center;
@@ -261,6 +262,91 @@ html {
       84%  {-webkit-transform: rotate(280deg);}
       92%  {-webkit-transform: rotate(320deg);}
   }
+/* menu déroulant*/
+  #menu {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    }
+    #menu, #menu ul {
+      padding:0;
+      margin:0;
+      list-style: none;
+      text-align: center;
+    }
+    #menu li {
+      display:inline-block;
+      vertical-align: top;
+      position: relative;
+    }
+    #menu li li {
+      display:inherit;
+    }
+    #menu a {
+      display:block;
+      padding:5px 50px;
+      text-decoration: none;
+      color:rgb(0,0,0);
+    }
+    #menu ul li a {
+      padding:5px 8px;
+    }
+    #menu ul {
+      position: absolute;
+      z-index: 1000;
+      min-width:100%;
+      white-space: nowrap;
+      text-align: left;
+    }
+    #menu ul ul {
+      left:100%;
+      top:0;
+      overflow: hidden;
+      max-width: 0;
+      min-width: 0;
+      transition: 1s all;
+    }
+    #menu ul li:hover ul {
+      max-width: 350px;
+    }
+    #menu ul li {
+      max-height:0;
+      overflow: hidden;
+      transition:all 1s;
+    }
+    #menu li li li {
+      max-height: inherit;
+    }
+    #menu li:hover li {
+      max-height: 35px;
+      overflow: visible;
+    }
+    .green{
+    background-color: rgb(207, 255, 106);
+    background-image:linear-gradient(to bottom, rgb(207, 255, 106) 0%, rgb(103, 127, 53) 100%);
+    }
+    .green li {
+        background-color:rgb(103, 127, 53);
+        background-image:linear-gradient(to bottom, rgb(207, 255, 106) 0%, rgb(103, 127, 53) 100%);
+    }
+    .green li:hover {
+        background:rgb(207, 255, 106);
+    }
+    #menu li:hover {
+        background-image:none;
+    }
+    #menu li:hover a, .menu li li:hover a {
+        border: 1px dotted rgb(0, 0, 0);
+        color:rgb(0, 0, 0);
+    }
+    #menu li:hover li a, #menu li:hover li li a {
+        color:rgb(0,0,0);
+    }
+    #menu li:hover a, #menu li li:hover a, #menu li li li:hover a {
+        color:rgb(0, 0, 0);
+    }
+/*Fin menu déroulant*/
+
   @media  screen and (max-width: 480px) {
     body{
       background: url("../img/background/backgroundmobile.jpg") fixed;
