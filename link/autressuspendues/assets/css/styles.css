@@ -139,13 +139,13 @@ html {
         }
     }
     @media screen and (max-width: 480px) {
-        img {
-            height: 98%;
-            width: 98%;
-        }
+    
         .flex {
             border: none;
             margin-top: 5px;
             margin-bottom: 5px;
+            height: 98%;
+            width: 98%;
         }
+        
     }
