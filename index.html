@@ -8,15 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Akaya+Telivigala" rel='stylesheet' type='text/css'/>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel='stylesheet' type='text/css'/>
     <link href="https://fonts.googleapis.com/css?family=Pangolin" rel='stylesheet' type='text/css'/>
-    <script type="text/javascript" src="assets/js/protection.js"></script>  
-   
-    <title>Mes plantes</title>
-    
+    <script type="text/javascript" src="assets/js/protection.js"></script>    
+    <title>Mes plantes</title>    
   </head>
 <body onload="prot()">
 
-  <ul id="menu">
-    <li class="green"><a class="choice" onmouseover="changetext()" id="change"  onmouseout="starttext()" id="change">Choisir ...</a>
+  <ul id="menu" class="choice" onmouseover="changetext()" onmouseout="starttext()">
+    <li class="green"><a id="change">Choisir ...</a>
         <ul>
             <li><a href="#">Mes Adenium</a>
 	            <ul>
@@ -213,6 +211,11 @@
 </ul>
 
 <header> 
+    <button class="navbuttonmediaqueries"><a href="link/wateringindex.html" alt="En savoir plus sur mes arrosages" title="En savoir plus sur mes arrosages" >Arrosages</a></button>
+    <button class="navbuttonmediaqueries"><a href="link/cuttingsindex.html" alt="En savoir plus sur mes bouturages" title="En savoir plus sur mes bouturages" >Bouturages</a></button>
+    <button class="navbuttonmediaqueries"><a href="link/verminindex.html" alt="En savoir plus sur mes observations de parasites" title="En savoir plus sur mes observations de parasites" >Parasites</a></button>
+    <button class="navbuttonmediaqueries"><a href="link/repottingindex.html" alt="En savoir plus sur mes rempotages" title="En savoir plus sur mes rempotages" >Rempotages</a></button>
+
   <div class="title"><u id="top">Mes plantes</u></div>
       <span class="subtitle">Ici, je vais présenter les plantes que j'ai et aussi que j'ai eues avec une petite description de leur maintenance.</span>
 </header>
@@ -229,29 +232,13 @@
   </div>
 </aside>
 
-<article>
-  <p><div class="update">Liste mises à jour:<br/>
-    Mise en ligne de mon site en date du 11/04/21.</p>
-    <p>Ajouts d'un menu déroulant avec des liens vers mes différentes plantes.</p>
-    <p>Dernière date de mise à jour.<br/>
-      03/05/2021</p>
-  </div>
-</article>
-
-<article>
-  <div class="soon">
-    <p><u>À venir:</u><br/>
-      Ajouts de plantes.<br/>
-      Ajouts de photos.<br/>
-      Création arrosages et rempotages.</p>
-  </div>
-</article>
-
 <nav>
-    <button class="navbutton"><a href="link/wateringindex.html">Arrosages</a></button>
-    <button class="navbutton"><a href="link/repottingindex.html">Rempotages</a></button>
+    <button class="navbutton"><a href="link/wateringindex.html" alt="En savoir plus sur mes arrosages" title="En savoir plus sur mes arrosages" >Arrosages</a></button>
+    <button class="navbutton"><a href="link/cuttingsindex.html" alt="En savoir plus sur mes bouturages" title="En savoir plus sur mes bouturages" >Bouturages</a></button>
+    <button class="navbutton"><a href="link/verminindex.html" alt="En savoir plus sur mes observations de parasites" title="En savoir plus sur mes observations de parasites" >Parasites</a></button>
+    <button class="navbutton"><a href="link/repottingindex.html" alt="En savoir plus sur mes rempotages" title="En savoir plus sur mes rempotages" >Rempotages</a></button>
+    <button class="topbutton"><a href="#top">Aller direct sur le haut de la page.</a></button>
 </nav>
-
 
 <main>
 <section>  
@@ -339,8 +326,8 @@
     <img src="assets/img/welcome/species/tillandsia.jpg" alt="En savoir plus sur mes Tillandsia" title="En savoir plus sur mes Tillandsia" onmouseover="javascript:this.src='assets/img/welcome/species/tillandsia2.jpg';"onmouseout="javascript:this.src='assets/img/welcome/species/tillandsia.jpg';"/></a></button>
 </section>
 <section>
-  <button class="styledbutton">Cliquez sur l'image pour en savoir plus sur mes autres vertes<a href="link/otherplantsindex.html">
-    <img src="assets/img/welcome/species/vertes.jpg" alt="En savoir plus sur mes autres plantes vertes" title="En savoir plus sur mes autres plantes vertes" onmouseover="javascript:this.src='assets/img/welcome/species/vertes2.jpg';"onmouseout="javascript:this.src='assets/img/welcome/species/vertes.jpg';"/></a></button>
+  <button class="styledbutton">Cliquez sur l'image pour en savoir plus sur mes autres plantes<a href="link/otherplantsindex.html">
+    <img src="assets/img/welcome/species/vertes.jpg" alt="En savoir plus sur mes autres plantes" title="En savoir plus sur mes autres plantes " onmouseover="javascript:this.src='assets/img/welcome/species/vertes2.jpg';"onmouseout="javascript:this.src='assets/img/welcome/species/vertes.jpg';"/></a></button>
 </section>
 <section>
   <button class="styledbutton">Cliquez sur l'image pour en savoir plus sur mes autres suspendues<a href="link/othersuspendedindex.html">
@@ -351,12 +338,24 @@
     <img src="assets/img/welcome/species/yucca.jpg" alt="En savoir plus sur mes Yucca" title="En savoir plus sur mes Yucca" onmouseover="javascript:this.src='assets/img/welcome/species/yucca2.jpg';"onmouseout="javascript:this.src='assets/img/welcome/species/yucca.jpg';"/></a></button>
 </section>
 
-<button class="topbutton"><a href="#top">Aller direct sur le haut de la page.</a></button>
+<footer>
+    <p><div class="update"><u>Liste mises à jour:</u><br/>
+      Mise en ligne de mon site en date du 11/04/21.</p>
+      <p>Ajouts d'un menu déroulant avec des liens vers mes différentes plantes.</p>
+      <p>Dernière date de mise à jour.<br/>
+        03/05/2021</p>
+    </div>
+    <div class="soon">
+      <p><u>À venir:</u><br/>
+        Ajouts de plantes.<br/>
+        Ajouts de photos.<br/>
+        Création pages arrosages, bouturages, observations et rempotages.</p>
+    </div>
+    <button class="topbuttonmediaqueries"><a href="#top">Aller direct sur le haut de la page.</a></button>
+</footer>
 
 </main>
-
 <script src="assets/js/scrollmenu.js"></script>
 <script src="assets/js/changeimg.js"></script>
-
 </body>
 </html>
