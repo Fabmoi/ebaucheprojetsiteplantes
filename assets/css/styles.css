@@ -1,6 +1,7 @@
-html {
+html, body {
 font-size: 20px;
 font-family: 'Akaya Telivigala', serif;
+scroll-behavior: smooth;
 }
 #adeniumbackground {
 background: url("../img/background/adenium.jpg") fixed;
@@ -89,13 +90,13 @@ nav, .styledtopbutton, .gallerybutton {
 text-align: center;
 }
 .title {
-font-size: 60px;
+font-size: 45px;
 font-weight: bold;
 color: rgba(255,255,255);
 text-shadow: 3px 3px 3px rgb(0,0,0);
 }
 .subtitle {
-font-size: 45px;
+font-size: 30px;
 font-weight: bold;
 color: rgba(255,255,255);
 text-shadow: 3px 3px 3px rgb(0,0,0);
@@ -152,6 +153,7 @@ hr {
     text-align: center;
     height: 5px;
     }
+                                                 /*Menu à onglets*/
 .nav-pills {
     display: flex;
     justify-content: center;
@@ -183,6 +185,14 @@ hr {
     margin-bottom: 20px;
     padding: 10px 0px;
     min-height: 243px;
+}
+                                                 /*Fin menu à onglets*/
+
+header span a {                                  /*ancres gallery plantes*/
+    color: rgb(255, 255, 255);
+}
+header span a:hover{
+    color: rgb(253, 18, 3);
 }
 @media screen and (max-width: 900px) {
     html::after {

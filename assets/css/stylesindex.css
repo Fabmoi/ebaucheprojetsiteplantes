@@ -1,6 +1,7 @@
-html {
+html, body {
     font-size: 20px;
     font-family: 'Akaya Telivigala', serif !important;
+    scroll-behavior: smooth;
   }
   body {
     margin: auto;
@@ -139,42 +140,42 @@ footer {
 }
 
 /* menu déroulant*/
-  #menu {
+  .menu {
     position: absolute;
     left: 15px;
     top: 10px;
     }
-    #menu, #menu ul {
+    .menu, .menu ul {
       padding: 0;
       margin: 0;
       list-style: none;
       text-align: center;
     }
-    #menu li {
+    .menu li {
       display: inline-block;
       vertical-align: top;
       position: relative;
     }
-    #menu li li {
+    .menu li li {
       display: inherit;
     }
-    #menu a {
+    .menu a {
       display: block;
       padding: 5px 50px;
       text-decoration: none;
       color: rgb(0,0,0);
     }
-    #menu ul li a {
+    .menu ul li a {
       padding: 5px 8px;
     }
-    #menu ul {
+    .menu ul {
       position: absolute;
       z-index: 1000;
       min-width: 100%;
       white-space: nowrap;
       text-align: left;
     }
-    #menu ul ul {
+    .menu ul ul {
       left: 100%;
       top: 0;
       overflow: hidden;
@@ -182,18 +183,18 @@ footer {
       min-width: 0;
       transition: 1s all;
     }
-    #menu ul li:hover ul {
+    .menu ul li:hover ul {
       max-width: 350px;
     }
-    #menu ul li {
+    .menu ul li {
       max-height: 0;
       overflow: hidden;
       transition: all 1s;
     }
-    #menu li li li {
+    .menu li li li {
       max-height: inherit;
     }
-    #menu li:hover li {
+    .menu li:hover li {
       max-height: 35px;
       overflow: visible;
     }
@@ -208,17 +209,17 @@ footer {
     .green li:hover {
         background: rgb(207, 255, 106);
     }
-    #menu li:hover {
+    .menu li:hover {
         background-image: none;
     }
-    #menu li:hover a, .menu li li:hover a {
+    .menu li:hover a, .menu li li:hover a {
         border: 1px dotted rgb(0, 0, 0);
         color :rgb(0, 0, 0);
     }
-    #menu li:hover li a, #menu li:hover li li a {
+    .menu li:hover li a, #menu li:hover li li a {
         color: rgb(0,0,0);
     }
-    #menu li:hover a, #menu li li:hover a, #menu li li li:hover a {
+    .menu li:hover a, #menu li li:hover a, #menu li li li:hover a {
         color: rgb(0, 0, 0);
     }
 /*Fin menu déroulant*/
@@ -287,7 +288,7 @@ footer {
     .styledbutton, .navbuttonmediaqueries {
       font-size: 25px;
     }
-    #menu {
+    .menu {
       top: 35px;
     } 
   }
@@ -323,7 +324,12 @@ footer {
     section {
       height: auto;
     }
-    #menu {
+    .menu {
       font-size: 16px;
     }
+  }
+                                                          /*Class pour le sticky*/
+  .fixed {
+    position: fixed;
+    top: 0;
   }
