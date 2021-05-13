@@ -40,7 +40,7 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
-
+                          /* reset css */
 html, body {
     font-size: 20px;
     font-family: 'Akaya Telivigala', serif !important;
@@ -84,12 +84,15 @@ html, body {
     width: 20%;
     height: 250px; 
   }
+  .textbio {
+    margin-top: 7px;
+    font-weight: bold;
+  }
   nav {                                   /*watering - repotting - cutting - observation*/
     width: 20%;
     position: fixed;
     right: 0;
-    top: 300px;
-    
+    top: 300px; 
   }
   .bio { 
     font-family: 'Dancing Script' !important;
@@ -101,17 +104,15 @@ html, body {
   }
   main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     width: 79%;
   }
   section {
     text-align: center;
     font-size: 30px;
-    height: 550px;
+    height: 515px;
     width: 485px;   
     margin: auto;
-    overflow: hidden;
   }  
   aside img {
     cursor: not-allowed;
@@ -166,26 +167,20 @@ html, body {
     background-color: rgb(6, 250, 6);
     background-image: linear-gradient(to bottom, rgb(6, 250, 6) 0%, rgb(6, 30, 250) 100%);
     font-weight: bold;
-   }
-footer {
+  }
+body footer {
   flex-flow: row wrap;
   margin: auto;
   justify-content: center;
   display: flex;
   text-align: center;
 }
-.update, .soon{
-  background-color: rgb(173, 255, 251);
-  border-radius: 15%;
-  border: 3px solid rgb(237, 0, 0);
-  text-align: center;
-  margin: 10px;
-}
 /* menu déroulant*/
   .menu {
     position: absolute;
     left: 15px;
     top: 10px;
+    z-index: 2;
     }
     .menu, .menu ul {
       padding: 0;
@@ -265,15 +260,11 @@ footer {
         color: rgb(0, 0, 0);
     }
 /*Fin menu déroulant*/
-
-
                                                           /* Boîtes modales */
   
-*  { box-sizing: border-box; }                            /* Celà bouge mon HR */
+* {box-sizing: border-box;}                               /* Celà bouge mon HR */
+*:focus {box-shadow: 0 0 10px rgb(0, 0, 255);}
 
-*:focus {
-    box-shadow: 0 0 10px rgb(0, 0, 255);
-}
 .js-modal {
   font-family: 'Akata+Telivigala' !important;
   font-size: 20px;
@@ -281,12 +272,34 @@ footer {
   padding: 10px;
   border-radius: 25%;
   background-color: rgb(187, 255, 0);
-  background-image: linear-gradient(to top, rgb(187, 255, 0) 0%, rgb(239, 250, 198) 100%);
-  } 
-  .js-modal:hover {
+  background-image: linear-gradient(to top, rgb(187, 255, 0) 0%, rgb(217, 221, 200) 100%);
+} 
+.js-modal:hover {
     font-weight: bold;
-  }
-.modal {
+}
+body footer .js-modal {
+    margin: 10px ;
+}
+.js-modalmediaqueries {
+    display: none;
+}
+.update, .soon{
+  background-color: rgb(173, 255, 251);
+  border-radius: 15%;
+  border: 3px solid rgb(237, 0, 0);
+  margin: 10px;
+  font-weight: bold;
+}
+.modal3update {
+  text-align: left;
+}
+.modal3date {
+  display: flex;
+}
+.modal3desc {
+  display: flex;
+}
+.modal{
     position: fixed;
     display: flex;
     align-items: center;
@@ -297,15 +310,14 @@ footer {
     height: 100%;
     background: rgba(0, 0, 0, 0.8) ;
     animation: fadeIn .3s both;
+    z-index: 3;
 }
 .modal-wrapper {
     overflow: auto;
-    width: 600px;
-    max-width: calc(100vw - 20px);
-    max-height: calc(100vh - 20px);
-    padding: 20px;
+    width: 800px;
+    padding: 28px;
     border-radius: 10px;
-    background: linear-gradient(rgb(46, 219, 232), rgb(55, 13, 206));
+    background: linear-gradient(rgb(46, 219, 232), rgb(0, 197, 76));
     animation: slideFromTop .3s both;
 }
 .modal[aria-hidden="true"] {
@@ -333,7 +345,39 @@ footer {
     to {transform: translateY(50px);}
 }
                                                           /* Fin boîtes modales */
-                                                          /* responsive */
+/*Class pour le sticky*/
+.fixed {
+  position: fixed;
+  top: 0;
+}                                                       /* Fin class sticky */
+                                                        /* Changer mot au survol de mes species */
+.species {
+  height: 37px;
+  position: relative;
+}
+.speciesout, .speciesin {
+  text-align: center;  
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0
+}
+.speciesin, .speciesout {                                  
+  font-size: 25px;
+  z-index: 0;
+}
+.speciesin,
+.species:hover .speciesout {                            /* mot quand curseur dedans */
+  opacity: 0;
+}
+.speciesout,
+.species:hover .speciesin {                             /* mot quand curseur en dehors */
+  opacity: 1;
+}
+                                                        /* Fin changement mot au survol de mes species */
+                                                        /* responsive */
  @media screen and (max-width: 1500px) {
     footer {
       flex-flow: column wrap;
@@ -371,6 +415,9 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  nav footer {
+    visibility: hidden;
+  }
   .title {
     font-size: 40px;
   }
@@ -378,7 +425,7 @@ footer {
     font-size: 25px;
   }
   section {
-    height: 366.7px;
+    height: 305px;
     width: 323.3px;
   }
   img {
@@ -394,7 +441,10 @@ footer {
   .topbuttonmediaqueries {
     visibility: visible;
     font-size: 20px;
-    margin: auto;
+    margin: 15px 0 25px 0
+  }
+  .styledbutton {
+    height: 305px;
   }
   .styledbutton, .navbuttonmediaqueries {
     font-size: 25px;
@@ -402,6 +452,10 @@ footer {
   .menu {
     top: 35px;
   } 
+  .js-modalmediaqueries {
+    display: flex;
+    flex-flow: column wrap;    
+  }
 }
 @media screen and (max-width: 645px){
 
@@ -440,8 +494,4 @@ footer {
   }
 }
                                                         /* fin responsive */
-                                                        /*Class pour le sticky*/
-.fixed {
-  position: fixed;
-  top: 0;
-}                                                       /* Fin class sticky */
+                                                        

@@ -5,19 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutoriel modal</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/stylesindex.css">
 </head>
 <body>
     
-    <section id="modal2" class="modal" role="dialog" aria-labelledby="titlemodal">
+    <section id="modal3" class="modal" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="font-size: 25px;">
         <div class="modal-wrapper js-modal-stop">
             <button class="js-modal-close">Fermer la boîte modale</button>
-            <h1 id="titlemodal" class="soon">À venir:</h1>
-                    Ajouts de plantes.<br/>
-                    Ajouts de photos.<br/>
-                    Création pages arrosages, bouturages, observations et rempotages.</p>
+                <p class="update">Liste mises à jour:</p>                           
+                    Mise en ligne de mon site en date du 11/04/21.</p>
+                    <hr>
+                        <div class="modal3update">
+                            <ul>
+                                <li><div class="modal3date">03/05/2021:<div class="modal3desc">&nbsp;Ajouts d'un menu déroulant donnant accès directement aux différentes catégories de plantes et vers les plantes choisies.<br/>&nbsp;_Création de boîtes modales affichant la liste des mises à jour et laliste des choses à venir.</div></div></li>
+                                <li><div class="modal3date">13/05/2021:<div class="modal3desc">&nbsp;_Modification et animation des différents titres des catégories de plantes sur l'accueil du site.</div></div></li>
+                            </ul>               
+                        </div>      
+        </div>                
+    </section>
+
+    <section id="modal2" class="modal" role="dialog" aria-labelledby="titlemodal" style="font-size: 25px;">
+        <div class="modal-wrapper js-modal-stop">
+            <button class="js-modal-close">Fermer la boîte modale</button>
+                <p class="soon">Liste des choses à venir:</p>
+                    <hr>
+                        <div style="text-align: left;">
+                            <ul style="list-style-type: disc;">
+                                <li>Ajouts de plantes.</li>
+                                <li>Ajouts de photos.</li>
+                                <li>Création pages arrosages, bouturages, parasites et rempotages.</li>
+                                <li>Achèvement de la modification et animation des différents titres des catégories de plantes sur l'accueil du site.</li>
+                            </ul>               
+                        </div>
         </div>
     </section>
+
 <script src="assets/js/modal.js"></script>
 </body>
 </html>

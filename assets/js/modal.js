@@ -72,6 +72,7 @@ const loadModal = async function (url) {
     if (exitingModal !== null) return exitingModal
     const html = await fetch(url).then(response => response.text())
     const element = document.createRange().createContextualFragment(html).querySelector(target)
+    console.log(element)
     if (element === null) throw `L'élément ${target} n'a pas été trouvé dans la page ${url}`
     document.body.append(element)
     return element
