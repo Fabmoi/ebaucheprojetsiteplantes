@@ -1,5 +1,3 @@
-
-
 function changetext() {
     document.getElementById('changemenu').innerHTML = "Choisir une catégorie de plantes";
     }
